@@ -28,11 +28,11 @@ export default function Engagement() {
                 </div>
 
                 {/* Timeline Visualization */}
-                <div className="relative border-t border-gray-300 pt-12 md:pt-20">
-                    <div className="grid md:grid-cols-4 gap-8">
+                <div className="relative md:border-t md:border-l-0 border-l border-gray-300 md:pt-20 pt-0 ml-4 md:ml-0 pl-8 md:pl-0">
+                    <div className="grid md:grid-cols-4 gap-12 md:gap-8">
                         {steps.map((step, index) => (
                             <div key={index} className="relative group">
-                                <div className="absolute -top-[53px] left-0 md:left-8 w-4 h-4 bg-teal-500 rounded-full border-4 border-white transition-transform group-hover:scale-125 duration-300"></div>
+                                <div className="absolute md:-top-[53px] md:left-8 top-1 -left-[39px] w-4 h-4 bg-teal-500 rounded-full border-4 border-white transition-transform group-hover:scale-125 duration-300"></div>
                                 <div className="hidden md:block absolute -top-[51px] left-8 w-full h-[1px] bg-gray-200 group-last:hidden"></div>
 
                                 <h4 className="text-lg font-heading font-medium mb-2 group-hover:text-teal-600 transition-colors uppercase tracking-wider">{step.title}</h4>

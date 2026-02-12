@@ -37,13 +37,21 @@ export default function SystemsPage() {
 
                     <div className="space-y-12 max-w-4xl mx-auto">
                         {engagementSteps.map((step, index) => (
-                            <div key={index} className="flex flex-col md:flex-row gap-8 items-start group">
-                                <div className="w-16 h-16 shrink-0 bg-gray-100 flex items-center justify-center rounded-full border-4 border-white shadow-xl z-10 group-hover:bg-teal-500 group-hover:text-white transition-colors duration-500">
-                                    <span className="font-heading font-bold text-xl">0{index + 1}</span>
+                            <div key={index} className="flex gap-4 md:gap-8 items-start group relative">
+                                {/* Timeline Line - Absolute to span full height including gap */}
+                                {index !== engagementSteps.length - 1 && (
+                                    <div className="absolute left-[1.5rem] md:left-[2rem] top-8 bottom-[-2rem] w-0.5 bg-gray-200 -translate-x-1/2 -z-10" />
+                                )}
+
+                                {/* Circle */}
+                                <div className="w-12 h-12 md:w-16 md:h-16 shrink-0 bg-gray-100 flex items-center justify-center rounded-full border-4 border-white shadow-lg z-10 group-hover:bg-teal-500 group-hover:text-white transition-colors duration-500">
+                                    <span className="font-heading font-bold text-lg md:text-xl">0{index + 1}</span>
                                 </div>
-                                <div className="pt-2 pb-12 border-l-2 border-dashed border-gray-200 pl-8 md:pl-0 md:border-none md:ml-0 -ml-[2.25rem]">
-                                    <h3 className="text-2xl font-heading font-medium mb-4 group-hover:text-teal-600 transition-colors uppercase tracking-wide">{step.title}</h3>
-                                    <p className="font-body text-gray-600 leading-relaxed text-lg">{step.desc}</p>
+
+                                {/* Content */}
+                                <div className="pt-1 md:pt-2 pb-12">
+                                    <h3 className="text-xl md:text-2xl font-heading font-medium mb-3 md:mb-4 group-hover:text-teal-600 transition-colors uppercase tracking-wide leading-tight">{step.title}</h3>
+                                    <p className="font-body text-gray-600 leading-relaxed text-base md:text-lg">{step.desc}</p>
                                 </div>
                             </div>
                         ))}
