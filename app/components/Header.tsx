@@ -65,7 +65,7 @@ export default function Header() {
                         <Link
                             key={link.href}
                             href={link.href}
-                            className="text-white/80 hover:text-teal-400 transition-colors transform hover:scale-105 duration-200"
+                            className="text-white/80 hover:text-white transition-colors transform hover:scale-105 duration-200"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             {link.label}

@@ -21,15 +21,15 @@ export default function Hero() {
             <div className="relative z-10 container-custom w-full">
                 <div className="max-w-4xl space-y-8">
                     <h1 className="text-5xl md:text-8xl font-heading font-thin tracking-tighter text-white leading-[1.05] animate-fade-in-up">
-                        Helping Service Businesses Turn Operational Pressure into <span className="font-normal text-teal-400">Clarity and Momentum</span>
+                        Operational Systems for <span className="font-normal">Growing Service Businesses</span>
                     </h1>
 
                     <p className="max-w-2xl text-lg md:text-xl font-body text-gray-200 leading-relaxed">
-                        B³ works with established service businesses to design and implement practical operating systems that reduce friction, improve visibility, and support sustainable growth.
+                        We design and implement operational systems for service businesses — from strategy through execution.
                     </p>
 
-                    <a href="#contact" className="inline-flex items-center gap-2 bg-teal-500 text-white font-body font-bold uppercase tracking-widest px-8 py-4 sharp transition-all hover:bg-teal-400 hover:scale-105 active:scale-95 group">
-                        Request a Conversation
+                    <a href="https://calendly.com/brad-horner-b-3solutions/30min" target="_blank" className="inline-flex items-center gap-2 bg-white text-black font-body font-bold uppercase tracking-widest px-8 py-4 sharp transition-all hover:bg-black hover:text-white hover:border hover:border-white active:scale-95 group border border-transparent">
+                        Schedule Strategic Call
                         <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                     </a>
                 </div>

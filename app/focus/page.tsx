@@ -39,7 +39,7 @@ export default function FocusPage() {
             <section className="bg-black text-white pt-40 pb-20 sharp">
                 <div className="container-custom">
                     <h1 className="text-5xl md:text-7xl font-heading font-thin mb-8">
-                        Where We <span className="text-teal-400">Focus</span>
+                        Where We <span className="text-white font-normal">Focus</span>
                     </h1>
                     <p className="text-xl font-body text-gray-400 max-w-2xl leading-relaxed">
                         We don't try to fix everything. We focus on the four critical pillars that determine whether a service business struggles or scales.
@@ -53,20 +53,20 @@ export default function FocusPage() {
                     {focusAreas.map((area, index) => (
                         <div key={index} className="grid md:grid-cols-2 gap-12 items-start group">
                             <div className="md:sticky top-32">
-                                <div className="w-16 h-16 bg-teal-50 flex items-center justify-center mb-6 sharp group-hover:bg-teal-500 transition-colors duration-500">
-                                    <area.icon className="w-8 h-8 text-teal-600 group-hover:text-white transition-colors duration-500" />
+                                <div className="w-16 h-16 bg-gray-100 flex items-center justify-center mb-6 sharp group-hover:bg-black transition-colors duration-500">
+                                    <area.icon className="w-8 h-8 text-black group-hover:text-white transition-colors duration-500" />
                                 </div>
                                 <h2 className="text-3xl md:text-4xl font-heading font-light mb-4">{area.title}</h2>
                             </div>
 
                             <div className="space-y-8">
-                                <div className="bg-gray-50 p-8 border-l-2 border-red-200 sharp">
-                                    <h3 className="text-sm font-bold text-red-400 uppercase tracking-widest mb-2">The Friction</h3>
+                                <div className="bg-white p-8 border-l-2 border-gray-300 sharp">
+                                    <h3 className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-2">The Friction</h3>
                                     <p className="font-body text-gray-700 leading-relaxed">{area.problem}</p>
                                 </div>
 
-                                <div className="bg-teal-50/30 p-8 border-l-2 border-teal-500 sharp">
-                                    <h3 className="text-sm font-bold text-teal-600 uppercase tracking-widest mb-2">The B³ Fix</h3>
+                                <div className="bg-gray-50 p-8 border-l-2 border-black sharp">
+                                    <h3 className="text-sm font-bold text-black uppercase tracking-widest mb-2">The B³ Fix</h3>
                                     <p className="font-body text-gray-800 leading-relaxed">{area.solution}</p>
                                 </div>
                             </div>

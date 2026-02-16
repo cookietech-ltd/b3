@@ -15,13 +15,13 @@ export default function ValuePage() {
             <Header />
 
             {/* Page Header */}
-            <section className="bg-gradient-to-br from-black to-gray-900 pt-40 pb-32 sharp">
+            <section className="bg-black pt-40 pb-32 sharp">
                 <div className="container-custom">
                     <h1 className="text-5xl md:text-8xl font-heading font-thin mb-8 leading-tight">
                         The Value of <br />
-                        <span className="text-teal-400">Order</span>
+                        <span className="text-white">Order</span>
                     </h1>
-                    <p className="text-xl md:text-2xl font-body text-gray-400 max-w-3xl leading-relaxed border-l border-teal-500 pl-8 ml-2">
+                    <p className="text-xl md:text-2xl font-body text-gray-400 max-w-3xl leading-relaxed border-l border-white pl-8 ml-2">
                         "Operational maturity is the single biggest predictor of long-term business value."
                     </p>
                 </div>
@@ -33,7 +33,7 @@ export default function ValuePage() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {valueProps.map((v, i) => (
                             <div key={i} className="border-t border-black pt-8 group hover:bg-black hover:text-white p-6 transition-all duration-300 sharp">
-                                <span className="block text-teal-500 text-sm font-bold mb-4 uppercase tracking-widest">Pillar 0{i + 1}</span>
+                                <span className="block text-black text-sm font-bold mb-4 uppercase tracking-widest group-hover:text-white">Pillar 0{i + 1}</span>
                                 <h3 className="text-3xl font-heading font-medium mb-4">{v.title}</h3>
                                 <p className="font-body text-gray-500 group-hover:text-gray-300 transition-colors leading-relaxed">
                                     {v.desc}
@@ -49,7 +49,7 @@ export default function ValuePage() {
                 <div className="container-custom grid md:grid-cols-2 gap-20 items-center">
                     <div>
                         <h2 className="text-4xl md:text-5xl font-heading font-thin mb-12">
-                            Our <span className="text-teal-600">Philosophy</span>
+                            Our <span className="text-black font-normal">Philosophy</span>
                         </h2>
                         <div className="space-y-8 font-body text-lg leading-relaxed text-gray-700">
                             <p>The challenges that create stress for business leaders are structural, not personal.</p>
@@ -58,7 +58,7 @@ export default function ValuePage() {
                         </div>
                     </div>
 
-                    <div className="aspect-square bg-teal-500 text-white p-12 flex flex-col justify-between sharp">
+                    <div className="aspect-square bg-black text-white p-12 flex flex-col justify-between sharp">
                         <span className="text-6xl font-heading font-bold">B³</span>
                         <div className="text-2xl font-heading font-thin tracking-wide">
                             Better Business.<br />
