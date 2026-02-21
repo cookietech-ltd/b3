@@ -1,34 +1,37 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CTA from '../components/CTA';
-import { Target, MessageCircle, BarChart3, Fingerprint } from 'lucide-react';
 
 export default function FocusPage() {
-    const focusAreas = [
+    const categories = [
         {
-            title: "Market Presence & Lead Flow",
-            icon: Fingerprint,
-            problem: "Marketing is sporadic. Leads are unpredictable. The website is just a brochure.",
-            solution: "We build systems that turn your market presence into a consistent intake engine. Messaging is sharpened. Channels are tracked. Your website becomes an operational tool that qualifies and captures intent."
+            number: "01",
+            title: "Market Infrastructure",
+            bottleneck: "Your website is a static brochure. No lead capture. No qualification. No operational connection to how work actually flows into the business.",
+            whatWeBuild: "Operational websites that function as intake infrastructure — not marketing brochures. Lead qualification systems. Service request portals. Client-facing operational tools.",
+            closing: "Your digital presence becomes part of your operational system, not separate from it.",
         },
         {
-            title: "Client Intake & Experience",
-            icon: MessageCircle,
-            problem: "Onboarding is manual. Clients feel a jagged entry. Communication relies on memory.",
-            solution: "We structure the entire client journey from 'Interested' to 'Signed'. Automated checkpoints, clear expectations, and a seamless digital handshake that builds trust before the work even begins."
+            number: "02",
+            title: "Client Operations",
+            bottleneck: "Intake is manual. Communication depends on who remembers what. Client expectations are set verbally and forgotten. No structured onboarding.",
+            whatWeBuild: "Structured intake workflows. CRM systems configured for service operations. Automated communication sequences. Client portals that provide visibility without creating more work for your team.",
+            closing: "Every client moves through the same structured process — from inquiry to signed to delivered.",
         },
         {
-            title: "Service Delivery & Fulfillment",
-            icon: Target,
-            problem: "Every project feels like a new invention. Scope creep is common. Quality depends on who is assigned.",
-            solution: "We map and standardize your delivery process. Checklists, templates, and clear handoff points ensure that quality is repeatable and scalable, regardless of who is doing the work."
+            number: "03",
+            title: "Service Delivery",
+            bottleneck: "Every job is custom. Quality depends on who's assigned. No standard process for dispatch, execution, or close-out. Service delivery is tribal knowledge.",
+            whatWeBuild: "Documented service delivery workflows. Technician apps for field execution. Dispatch systems. Job tracking infrastructure. Process maps that make quality repeatable regardless of who delivers.",
+            closing: "Service delivery becomes a system, not an art form.",
         },
         {
-            title: "Leadership Visibility",
-            icon: BarChart3,
-            problem: "You lead by feeling, not fact. Data is buried in spreadsheets or nonexistent.",
-            solution: "We implement dashboards that surface the pulse of your business. Cash flow, pipeline health, utilization, and client sentiment—visible at a glance, allowing you to lead with precision."
-        }
+            number: "04",
+            title: "Operational Visibility",
+            bottleneck: "Leadership operates by feel. Data is buried in spreadsheets or doesn't exist. Job profitability, utilization, and pipeline health require manual work to determine.",
+            whatWeBuild: "Operational dashboards that surface business health. KPI tracking. Automated reporting. Metric infrastructure that provides real-time visibility without constant manual updates.",
+            closing: "Leadership operates with data, not gut feel.",
+        },
     ];
 
     return (
@@ -42,32 +45,52 @@ export default function FocusPage() {
                         Where We <span className="text-white font-normal">Focus</span>
                     </h1>
                     <p className="text-xl font-body text-gray-400 max-w-2xl leading-relaxed">
-                        We don't try to fix everything. We focus on the four critical pillars that determine whether a service business struggles or scales.
+                        Four operational infrastructure categories that determine whether service businesses struggle or scale.
                     </p>
                 </div>
             </section>
 
-            {/* Detailed Areas */}
-            <section className="section-padding sharp">
-                <div className="container-custom space-y-24">
-                    {focusAreas.map((area, index) => (
-                        <div key={index} className="grid md:grid-cols-2 gap-12 items-start group">
-                            <div className="md:sticky top-32">
-                                <div className="w-16 h-16 bg-gray-100 flex items-center justify-center mb-6 sharp group-hover:bg-black transition-colors duration-500">
-                                    <area.icon className="w-8 h-8 text-black group-hover:text-white transition-colors duration-500" />
+            {/* Categories */}
+            <section className="sharp">
+                <div className="container-custom">
+                    {categories.map((cat, index) => (
+                        <div
+                            key={index}
+                            className={`py-20 md:py-28 border-l-2 border-black pl-8 md:pl-16 ${index % 2 === 1 ? 'bg-[#F8F8F8] -mx-6 md:-mx-12 px-12 md:px-24' : ''}`}
+                        >
+                            {/* Category Number & Title */}
+                            <div className="flex items-baseline gap-4 md:gap-6 mb-12">
+                                <span className="text-5xl md:text-7xl font-heading font-black text-black leading-none">
+                                    {cat.number}
+                                </span>
+                                <div className="flex items-baseline gap-3">
+                                    <span className="text-gray-400 font-heading text-xl md:text-2xl">—</span>
+                                    <h2 className="text-3xl md:text-4xl font-heading font-light">{cat.title}</h2>
                                 </div>
-                                <h2 className="text-3xl md:text-4xl font-heading font-light mb-4">{area.title}</h2>
                             </div>
 
-                            <div className="space-y-8">
-                                <div className="bg-white p-8 border-l-2 border-gray-300 sharp">
-                                    <h3 className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-2">The Friction</h3>
-                                    <p className="font-body text-gray-700 leading-relaxed">{area.problem}</p>
+                            <div className="grid md:grid-cols-2 gap-12 md:gap-20">
+                                {/* The Bottleneck */}
+                                <div>
+                                    <h3 className="text-xs font-bold text-gray-500 uppercase tracking-[0.2em] mb-4 font-body">
+                                        The Bottleneck
+                                    </h3>
+                                    <p className="font-body text-gray-600 leading-relaxed text-lg">
+                                        {cat.bottleneck}
+                                    </p>
                                 </div>
 
-                                <div className="bg-gray-50 p-8 border-l-2 border-black sharp">
-                                    <h3 className="text-sm font-bold text-black uppercase tracking-widest mb-2">The B³ Fix</h3>
-                                    <p className="font-body text-gray-800 leading-relaxed">{area.solution}</p>
+                                {/* What We Build */}
+                                <div>
+                                    <h3 className="text-xs font-bold text-black uppercase tracking-[0.2em] mb-4 font-body">
+                                        What We Build
+                                    </h3>
+                                    <p className="font-body text-gray-800 leading-relaxed text-lg mb-6">
+                                        {cat.whatWeBuild}
+                                    </p>
+                                    <p className="font-body text-black font-medium leading-relaxed text-lg border-l-2 border-black pl-6">
+                                        {cat.closing}
+                                    </p>
                                 </div>
                             </div>
                         </div>

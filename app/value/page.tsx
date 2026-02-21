@@ -3,11 +3,27 @@ import Footer from '../components/Footer';
 import CTA from '../components/CTA';
 
 export default function ValuePage() {
-    const valueProps = [
-        { title: "Visibility", desc: "No more guessing. We build dashboards that answer 'How are we doing?' instantly." },
-        { title: "Repeatability", desc: "The same service, the same quality, every time. Regardless of who delivers it." },
-        { title: "Scalability", desc: "Add more clients without adding more chaos. Systems expand; people break." },
-        { title: "Transferability", desc: "Build a business others can run. Or buy. Documentation is your asset." },
+    const pillars = [
+        {
+            number: "01",
+            title: "Visibility",
+            desc: "Know how the business is performing without manual work. Dashboards that surface operational health. Metrics that drive decisions."
+        },
+        {
+            number: "02",
+            title: "Repeatability",
+            desc: "Deliver consistent service quality regardless of who does the work. Documented workflows. Standard operating procedures. Repeatable execution."
+        },
+        {
+            number: "03",
+            title: "Scalability",
+            desc: "Grow revenue without proportional increases in operational complexity. Systems handle volume. Founders don't become bottlenecks."
+        },
+        {
+            number: "04",
+            title: "Transferability",
+            desc: "Build a business others can operate. Documented systems. Reduced founder dependency. Real enterprise value."
+        },
     ];
 
     return (
@@ -18,43 +34,64 @@ export default function ValuePage() {
             <section className="bg-black pt-40 pb-32 sharp">
                 <div className="container-custom">
                     <h1 className="text-5xl md:text-8xl font-heading font-thin mb-8 leading-tight">
-                        The Value of <br />
-                        <span className="text-white">Order</span>
+                        Why Operational <br />
+                        <span className="text-white font-normal">Systems Matter</span>
                     </h1>
                     <p className="text-xl md:text-2xl font-body text-gray-400 max-w-3xl leading-relaxed border-l border-white pl-8 ml-2">
-                        "Operational maturity is the single biggest predictor of long-term business value."
+                        Service businesses scale when operations are systematic, not when founders work harder.
+                    </p>
+                </div>
+            </section>
+
+            {/* Intro Statement */}
+            <section className="bg-white text-black py-16 md:py-24 sharp">
+                <div className="container-custom">
+                    <p className="text-xl md:text-2xl font-body text-gray-700 max-w-4xl leading-relaxed">
+                        Operational infrastructure determines whether a service business can scale or remains dependent on the founder. The firm builds systems that create four types of operational leverage:
                     </p>
                 </div>
             </section>
 
             {/* The Pillars */}
-            <section className="bg-white text-black section-padding sharp">
-                <div className="container-custom">
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {valueProps.map((v, i) => (
-                            <div key={i} className="border-t border-black pt-8 group hover:bg-black hover:text-white p-6 transition-all duration-300 sharp">
-                                <span className="block text-black text-sm font-bold mb-4 uppercase tracking-widest group-hover:text-white">Pillar 0{i + 1}</span>
-                                <h3 className="text-3xl font-heading font-medium mb-4">{v.title}</h3>
-                                <p className="font-body text-gray-500 group-hover:text-gray-300 transition-colors leading-relaxed">
-                                    {v.desc}
-                                </p>
+            <section className="bg-white text-black sharp">
+                <div className="container-custom pb-20 md:pb-32">
+                    <div className="grid md:grid-cols-2 gap-8 md:gap-10">
+                        {pillars.map((pillar, i) => (
+                            <div
+                                key={i}
+                                className="group sharp transition-all duration-500 hover:shadow-2xl flex flex-col"
+                            >
+                                {/* Number Strip */}
+                                <div className="bg-black text-white px-8 py-6 flex items-center gap-5">
+                                    <span className="text-4xl md:text-5xl font-heading font-black leading-none">
+                                        {pillar.number}
+                                    </span>
+                                    <h3 className="text-2xl md:text-3xl font-heading font-light uppercase tracking-wider">
+                                        {pillar.title}
+                                    </h3>
+                                </div>
+                                {/* Description */}
+                                <div className="bg-gray-50 px-8 py-8 border border-t-0 border-gray-200 flex-1">
+                                    <p className="font-body text-gray-600 leading-relaxed text-base md:text-lg">
+                                        {pillar.desc}
+                                    </p>
+                                </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* Philosophy */}
-            <section className="bg-gray-100 text-black py-24 md:py-40 sharp">
+            {/* Our Approach */}
+            <section className="bg-[#F0F0F0] text-black py-24 md:py-36 sharp">
                 <div className="container-custom grid md:grid-cols-2 gap-20 items-center">
                     <div>
                         <h2 className="text-4xl md:text-5xl font-heading font-thin mb-12">
-                            Our <span className="text-black font-normal">Philosophy</span>
+                            Our <span className="text-black font-normal">Approach</span>
                         </h2>
                         <div className="space-y-8 font-body text-lg leading-relaxed text-gray-700">
-                            <p>The challenges that create stress for business leaders are structural, not personal.</p>
-                            <p>Effective systems do not need to be complex or expensive. They need to be thoughtful, practical, and aligned with real operations.</p>
-                            <p>We believe in <strong className="text-black">right-sized solutions</strong> that create leverage without unnecessary overhead.</p>
+                            <p>The firm builds practical operational infrastructure designed for growing service businesses. Right-sized solutions. No unnecessary overhead. Systems that work in real operations, not just on paper.</p>
+                            <p>Operational bottlenecks are <strong className="text-black">structural problems</strong>, not people problems. The firm fixes the structure.</p>
                         </div>
                     </div>
 
@@ -63,7 +100,7 @@ export default function ValuePage() {
                         <div className="text-2xl font-heading font-thin tracking-wide">
                             Better Business.<br />
                             Better Balance.<br />
-                            Better Bottom-line.
+                            Better Bottom Line.
                         </div>
                     </div>
                 </div>

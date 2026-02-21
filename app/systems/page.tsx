@@ -1,15 +1,44 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CTA from '../components/CTA';
-import Deliverables from '../components/Deliverables';
-import { Target, ChevronsRight, Clock, CheckSquare } from 'lucide-react';
 
 export default function SystemsPage() {
-    const engagementSteps = [
-        { title: "Diagnose the Bottleneck", desc: "We audit your current state. No assumptions. We map the friction points and align on the goal.", icon: Target },
-        { title: "Design the System", desc: "We build the blueprint. Process flows, tech stack selection (if needed), and role clarity.", icon: ChevronsRight },
-        { title: "Deploy & Integrate", desc: "We don't just hand you a PDF. We stand up the system, train your team, and run it alongside you.", icon: Clock },
-        { title: "Optimize & Advance", desc: "The system belongs to you. We ensure your team owns it, maintains it, and improves it.", icon: CheckSquare }
+    const phases = [
+        {
+            number: "01",
+            title: "Diagnose the Bottleneck",
+            desc: "Audit current operations. Map workflows. Identify where execution breaks down — intake, dispatch, visibility, communication, scalability. Document the actual operational constraint."
+        },
+        {
+            number: "02",
+            title: "Design the System",
+            desc: "Design the complete operational system. Process flows. Data architecture. Technology requirements. Role definitions. This is the blueprint for implementation."
+        },
+        {
+            number: "03",
+            title: "Deploy & Integrate",
+            desc: "Build and deploy the infrastructure. Custom applications, CRM configuration, workflow automation, operational websites. Implement and integrate the system into operations."
+        },
+        {
+            number: "04",
+            title: "Optimize & Advance",
+            desc: "Stabilize the system. Train the team. Optimize performance. Once operational, identify the next constraint and continue improving infrastructure."
+        }
+    ];
+
+    const deliverables = [
+        {
+            title: "System Design & Documentation",
+            items: ["Process maps", "Workflow diagrams", "SOP libraries", "Role descriptions", "Operational playbooks", "Training materials"]
+        },
+        {
+            title: "Technology Implementation",
+            items: ["Custom applications", "CRM configuration", "Dashboard setup", "Workflow automation", "Metric trackers", "Operational websites"]
+        },
+        {
+            title: "Training & Enablement",
+            items: ["Training videos", "Template suites", "Quick-reference guides", "Onboarding materials", "Change management support"]
+        }
     ];
 
     return (
@@ -20,39 +49,46 @@ export default function SystemsPage() {
             <section className="bg-black text-white pt-40 pb-32 sharp">
                 <div className="container-custom text-center">
                     <h1 className="text-4xl md:text-7xl font-heading font-thin mb-8">
-                        Operating Systems <br />
-                        <span className="text-white font-normal">Designed for Humans</span>
+                        How We <span className="text-white font-normal">Work</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-                        Technology is just the tool. The system is the behavior. We build operating models that your specific team will actually use.
+                        We diagnose operational bottlenecks, design complete systems, and implement the infrastructure. From strategy through execution.
                     </p>
                 </div>
             </section>
 
-            {/* Engagement Model */}
-            <section className="section-padding sharp">
+            {/* Four-Phase Process */}
+            <section className="bg-[#F8F8F8] py-24 md:py-36 sharp">
                 <div className="container-custom">
-                    <h2 className="text-3xl md:text-5xl font-heading font-light mb-16 text-center">
-                        How an Engagement <span className="text-black font-normal">Unfolds</span>
+                    <h2 className="text-3xl md:text-5xl font-heading font-light mb-20 text-center">
+                        Four-Phase <span className="text-black font-normal">Process</span>
                     </h2>
 
-                    <div className="space-y-12 max-w-4xl mx-auto">
-                        {engagementSteps.map((step, index) => (
-                            <div key={index} className="flex gap-4 md:gap-8 items-start group relative">
-                                {/* Timeline Line - Absolute to span full height including gap */}
-                                {index !== engagementSteps.length - 1 && (
-                                    <div className="absolute left-[1.5rem] md:left-[2rem] top-8 bottom-[-2rem] w-0.5 bg-gray-200 -translate-x-1/2 -z-10" />
+                    <div className="max-w-5xl mx-auto space-y-0">
+                        {phases.map((phase, index) => (
+                            <div key={index} className="relative">
+                                {/* Connecting arrow / vertical line */}
+                                {index !== phases.length - 1 && (
+                                    <div className="absolute left-[36px] md:left-[42px] top-[84px] bottom-0 w-[2px] bg-black/20 z-0">
+                                        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[8px] border-t-black/30"></div>
+                                    </div>
                                 )}
 
-                                {/* Circle */}
-                                <div className="w-12 h-12 md:w-16 md:h-16 shrink-0 bg-gray-100 flex items-center justify-center rounded-full border-4 border-white shadow-lg z-10 group-hover:bg-black group-hover:text-white transition-colors duration-500">
-                                    <span className="font-heading font-bold text-lg md:text-xl">0{index + 1}</span>
-                                </div>
+                                <div className="flex gap-6 md:gap-10 items-start relative z-10 pb-16 md:pb-20">
+                                    {/* Phase Number Badge — black bg, white text */}
+                                    <div className="w-[72px] h-[72px] md:w-[84px] md:h-[84px] bg-black text-white flex items-center justify-center shrink-0 sharp">
+                                        <span className="text-2xl md:text-3xl font-heading font-bold">{phase.number}</span>
+                                    </div>
 
-                                {/* Content */}
-                                <div className="pt-1 md:pt-2 pb-12">
-                                    <h3 className="text-xl md:text-2xl font-heading font-medium mb-3 md:mb-4 group-hover:text-black transition-colors uppercase tracking-wide leading-tight">{step.title}</h3>
-                                    <p className="font-body text-gray-600 leading-relaxed text-base md:text-lg">{step.desc}</p>
+                                    {/* Content */}
+                                    <div className="pt-2 md:pt-4">
+                                        <h3 className="text-2xl md:text-3xl font-heading font-medium mb-4 uppercase tracking-wide">
+                                            {phase.title}
+                                        </h3>
+                                        <p className="font-body text-gray-600 leading-relaxed text-base md:text-lg max-w-2xl">
+                                            {phase.desc}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -60,8 +96,35 @@ export default function SystemsPage() {
                 </div>
             </section>
 
-            {/* Deliverables Grid */}
-            <Deliverables />
+            {/* What We Deliver */}
+            <section className="bg-white text-black section-padding sharp">
+                <div className="container-custom">
+                    <h2 className="text-4xl md:text-5xl font-heading font-light tracking-tight mb-4">
+                        What We <span className="font-normal border-b-2 border-black pb-1">Deliver</span>
+                    </h2>
+
+                    <p className="text-xl max-w-2xl font-body text-gray-500 mb-20 leading-relaxed">
+                        The outputs depend on operational requirements. Typical deliverables include:
+                    </p>
+
+                    <div className="grid md:grid-cols-3 gap-12 text-left">
+                        {deliverables.map((cat, index) => (
+                            <div key={index} className="space-y-6">
+                                <h3 className="text-2xl font-heading font-bold">{cat.title}</h3>
+                                <div className="h-px w-12 bg-black"></div>
+                                <ul className="space-y-3 font-body text-gray-600">
+                                    {cat.items.map((item, i) => (
+                                        <li key={i} className="flex items-start gap-3">
+                                            <span className="text-sm mt-1.5">•</span>
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             <CTA />
             <Footer />
