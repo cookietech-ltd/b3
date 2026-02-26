@@ -2,7 +2,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CTA from '../components/CTA';
 
-export default function SystemsPage() {
+export default function OurApproachPage() {
     const phases = [
         {
             number: "01",
@@ -54,6 +54,30 @@ export default function SystemsPage() {
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
                         We diagnose operational bottlenecks, design complete systems, and implement the infrastructure. From strategy through execution.
                     </p>
+                </div>
+            </section>
+
+            {/* Our Approach */}
+            <section className="bg-[#F0F0F0] text-black py-24 md:py-36 sharp">
+                <div className="container-custom grid md:grid-cols-2 gap-20 items-center">
+                    <div>
+                        <h2 className="text-4xl md:text-5xl font-heading font-thin mb-12">
+                            Our <span className="text-black font-normal">Approach</span>
+                        </h2>
+                        <div className="space-y-8 font-body text-lg leading-relaxed text-gray-700">
+                            <p>B3 solutions builds practical operational infrastructure designed for growing service businesses. Right-sized solutions. No unnecessary overhead. Systems that work in real operations, not just on paper.</p>
+                            <p>Operational bottlenecks are <strong className="text-black">structural problems</strong>, not people problems. B3 solutions fixes the structure.</p>
+                        </div>
+                    </div>
+
+                    <div className="aspect-square bg-black text-white p-12 flex flex-col justify-between sharp">
+                        <img src="/images/logo/logo_white.png" alt="B³ Solutions" className="w-40 md:w-56 h-auto" />
+                        <div className="text-2xl font-heading font-thin tracking-wide">
+                            Better Business.<br />
+                            Better Balance.<br />
+                            Better Bottom Line.
+                        </div>
+                    </div>
                 </div>
             </section>
 

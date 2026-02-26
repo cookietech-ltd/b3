@@ -47,7 +47,7 @@ export default function ValuePage() {
             <section className="bg-white text-black py-16 md:py-24 sharp">
                 <div className="container-custom">
                     <p className="text-xl md:text-2xl font-body text-gray-700 max-w-4xl leading-relaxed">
-                        Operational infrastructure determines whether a service business can scale or remains dependent on the founder. The firm builds systems that create four types of operational leverage:
+                        Operational infrastructure determines whether a service business can scale or remains dependent on the founder. B3 Solutions builds systems that create four types of operational leverage:
                     </p>
                 </div>
             </section>
@@ -82,29 +82,6 @@ export default function ValuePage() {
                 </div>
             </section>
 
-            {/* Our Approach */}
-            <section className="bg-[#F0F0F0] text-black py-24 md:py-36 sharp">
-                <div className="container-custom grid md:grid-cols-2 gap-20 items-center">
-                    <div>
-                        <h2 className="text-4xl md:text-5xl font-heading font-thin mb-12">
-                            Our <span className="text-black font-normal">Approach</span>
-                        </h2>
-                        <div className="space-y-8 font-body text-lg leading-relaxed text-gray-700">
-                            <p>The firm builds practical operational infrastructure designed for growing service businesses. Right-sized solutions. No unnecessary overhead. Systems that work in real operations, not just on paper.</p>
-                            <p>Operational bottlenecks are <strong className="text-black">structural problems</strong>, not people problems. The firm fixes the structure.</p>
-                        </div>
-                    </div>
-
-                    <div className="aspect-square bg-black text-white p-12 flex flex-col justify-between sharp">
-                        <span className="text-6xl font-heading font-bold">B³</span>
-                        <div className="text-2xl font-heading font-thin tracking-wide">
-                            Better Business.<br />
-                            Better Balance.<br />
-                            Better Bottom Line.
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             <CTA />
             <Footer />
