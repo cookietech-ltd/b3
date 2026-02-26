@@ -83,23 +83,23 @@ export default function CustomCursor() {
             `}</style>
 
             {/* Wrapper to handle Visibility (Opacity) - React Controlled */}
-            <div className={`hidden md:block fixed inset-0 pointer-events-none z-[9999] transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+            <div className={`hidden md:block fixed inset-0 pointer-events-none z-[9999] mix-blend-difference transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                 {/* Position Marker - React should NOT touch this node's style */}
                 <div ref={cursorRef} className="absolute top-0 left-0 will-change-transform">
                     {/* Visual Dot */}
-                    <div className="w-2 h-2 bg-teal-400 rounded-full mix-blend-difference -translate-x-1 -translate-y-1" />
+                    <div className="w-2 h-2 bg-white rounded-full -translate-x-1 -translate-y-1" />
                 </div>
             </div>
 
             {/* Wrapper to handle Visibility (Opacity) - React Controlled */}
-            <div className={`hidden md:block fixed inset-0 pointer-events-none z-[9998] transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+            <div className={`hidden md:block fixed inset-0 pointer-events-none z-[9998] mix-blend-difference transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                 {/* Position Marker - React should NOT touch this node's style */}
                 <div ref={followerRef} className="absolute top-0 left-0 will-change-transform transition-transform duration-300 ease-out">
                     {/* Visual Ring - React Controlled (Scale/Color) */}
                     <div className={`
-                        w-12 h-12 border border-teal-500/50 -translate-x-6 -translate-y-6 transition-transform duration-300 ease-out
-                        ${isPointer ? 'scale-150 bg-teal-500/10 border-teal-400' : 'scale-100'}
-                        ${isClicking ? 'scale-75 bg-teal-400/20' : ''}
+                        w-12 h-12 rounded-full border border-white -translate-x-6 -translate-y-6 transition-all duration-300 ease-out
+                        ${isPointer ? 'scale-150 bg-white/10' : 'scale-100 border-white/50'}
+                        ${isClicking ? 'scale-75 bg-white/20' : ''}
                     `} />
                 </div>
             </div>
