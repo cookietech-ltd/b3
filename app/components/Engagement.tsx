@@ -36,7 +36,7 @@ export default function Engagement() {
                     {/* Phase Numbers Row with Arrows */}
                     <div className="grid grid-cols-7 items-center mb-8">
                         {/* 01 */}
-                        <div className="col-span-1 text-[5.5rem] lg:text-[7rem] font-heading font-black text-black leading-none">
+                        <div className="col-span-1 text-5xl md:text-7xl font-heading font-black text-black leading-none">
                             01
                         </div>
                         {/* Arrow 1 */}
@@ -47,7 +47,7 @@ export default function Engagement() {
                             </svg>
                         </div>
                         {/* 02 */}
-                        <div className="col-span-1 text-[5.5rem] lg:text-[7rem] font-heading font-black text-black leading-none">
+                        <div className="col-span-1 text-5xl md:text-7xl font-heading font-black text-black leading-none">
                             02
                         </div>
                         {/* Arrow 2 */}
@@ -58,7 +58,7 @@ export default function Engagement() {
                             </svg>
                         </div>
                         {/* 03 */}
-                        <div className="col-span-1 text-[5.5rem] lg:text-[7rem] font-heading font-black text-black leading-none">
+                        <div className="col-span-1 text-5xl md:text-7xl font-heading font-black text-black leading-none">
                             03
                         </div>
                         {/* Arrow 3 */}
@@ -69,7 +69,7 @@ export default function Engagement() {
                             </svg>
                         </div>
                         {/* 04 */}
-                        <div className="col-span-1 text-[5.5rem] lg:text-[7rem] font-heading font-black text-black leading-none">
+                        <div className="col-span-1 text-5xl md:text-7xl font-heading font-black text-black leading-none">
                             04
                         </div>
                     </div>
@@ -90,7 +90,7 @@ export default function Engagement() {
                     {steps.map((step, index) => (
                         <div key={index}>
                             <div className="py-8">
-                                <div className="text-[5rem] font-heading font-black text-black leading-none mb-4">
+                                <div className="text-5xl md:text-7xl font-heading font-black text-black leading-none mb-4">
                                     0{index + 1}
                                 </div>
                                 <h4 className="text-lg font-heading font-semibold mb-3 uppercase tracking-wider">{step.title}</h4>

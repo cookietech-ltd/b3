@@ -15,8 +15,6 @@ export default function Value() {
 
                 <p className="font-body text-xl text-gray-400 mb-20 max-w-3xl leading-relaxed animate-fade-in-up delay-200">
                     We've designed workflows for multi-location service teams, deployed operational platforms that improve visibility, and built technology infrastructure that scales with the business.
-                    <br /><br />
-                    <span className="text-white font-medium">No fake scale. No exaggerated claims.</span>
                 </p>
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -57,7 +57,7 @@ export default function Services() {
                 <div className="grid md:grid-cols-2 gap-px bg-gray-200 border border-gray-200 sharp">
                     {services.map((service, index) => (
                         <div key={index} className="bg-white p-12 hover:bg-gray-50 transition-colors group relative sharp">
-                            <div className="absolute top-8 right-8 text-6xl font-heading font-bold text-gray-100 group-hover:text-black transition-colors pointer-events-none">
+                            <div className="absolute top-8 right-8 text-5xl md:text-7xl font-heading font-black text-gray-100 group-hover:text-black transition-colors pointer-events-none leading-none">
                                 0{index + 1}
                             </div>
                             <service.icon className="w-12 h-12 text-black mb-8 stroke-1 transition-colors" />
