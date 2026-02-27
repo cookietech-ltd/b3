@@ -32,7 +32,7 @@ export default function ImplementationCapability() {
                     </ul>
 
                     <p className="text-lg font-body text-gray-500 border-l border-black pl-6 italic">
-                        We bring in specialized expertise when needed. B3 Solutions. Full accountability.
+                        We bring in specialized expertise when needed. B³ Solutions. Full accountability.
                     </p>
                 </div>
             </div>

@@ -10,9 +10,9 @@ export async function POST(req: Request) {
         const { firstName, lastName, email, businessName, challenge } = body;
 
         const { data, error } = await resend.emails.send({
-            from: 'B3 Solutions Website <onboarding@resend.dev>',
+            from: 'B³ Solutions Website <onboarding@resend.dev>',
             to: ['akashshahriar55@gmail.com'], // Updated to verified email for testing
-            subject: `New B3 Inquiry from ${firstName} ${lastName}`,
+            subject: `New B³ Inquiry from ${firstName} ${lastName}`,
             html: `
 <!DOCTYPE html>
 <html>

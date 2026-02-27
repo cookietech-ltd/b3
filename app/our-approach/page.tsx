@@ -65,8 +65,8 @@ export default function OurApproachPage() {
                             Our <span className="text-black font-normal">Approach</span>
                         </h2>
                         <div className="space-y-8 font-body text-lg leading-relaxed text-gray-700">
-                            <p>B3 solutions builds practical operational infrastructure designed for growing service businesses. Right-sized solutions. No unnecessary overhead. Systems that work in real operations, not just on paper.</p>
-                            <p>Operational bottlenecks are <strong className="text-black">structural problems</strong>, not people problems. B3 solutions fixes the structure.</p>
+                            <p>B³ solutions builds practical operational infrastructure designed for growing service businesses. Right-sized solutions. No unnecessary overhead. Systems that work in real operations, not just on paper.</p>
+                            <p>Operational bottlenecks are <strong className="text-black">structural problems</strong>, not people problems. B³ solutions fixes the structure.</p>
                         </div>
                     </div>
 
