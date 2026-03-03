@@ -25,6 +25,7 @@ export default function Header() {
     }, [isMenuOpen]);
 
     const navLinks = [
+        { href: '/case-studies', label: 'Work' },
         { href: '/focus', label: 'Focus' },
         { href: '/value', label: 'Value' },
         { href: '/our-approach', label: 'Our Approach' },

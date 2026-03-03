@@ -47,7 +47,7 @@ export default function ValuePage() {
             <section className="bg-white text-black py-16 md:py-24 sharp">
                 <div className="container-custom">
                     <p className="text-xl md:text-2xl font-body text-gray-700 max-w-4xl leading-relaxed">
-                        Operational infrastructure determines whether a service business can scale or remains dependent on the founder. B3 Solutions builds systems that create four types of operational leverage:
+                        Operational infrastructure determines whether a service business can scale or remains dependent on the founder. B³ Solutions builds systems that create four types of operational leverage:
                     </p>
                 </div>
             </section>
