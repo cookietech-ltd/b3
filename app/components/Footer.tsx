@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
     return (
         <footer className="bg-black text-white py-12 border-t border-white/5 font-body sharp">
@@ -10,8 +12,8 @@ export default function Footer() {
 
                 <div className="flex flex-col md:items-end gap-4 text-sm text-gray-500">
                     <div className="flex gap-8">
-                        <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                        <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                        <Link href="/terms-of-use" className="hover:text-white transition-colors">Terms of Service</Link>
                     </div>
                     <p>© {new Date().getFullYear()} B³ Solutions. All rights reserved.</p>
                 </div>

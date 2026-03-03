@@ -5,6 +5,7 @@ import Services from './components/Services';
 import Engagement from './components/Engagement'; // Process
 import ImplementationCapability from './components/ImplementationCapability';
 import Deliverables from './components/Deliverables';
+import FeaturedWork from './components/FeaturedWork';
 import Value from './components/Value'; // Outcomes
 import CTA from './components/CTA';
 import Footer from './components/Footer';
@@ -19,6 +20,7 @@ export default function Home() {
       <Engagement />
       <ImplementationCapability />
       <Deliverables />
+      <FeaturedWork />
       <Value />
       <CTA />
       <Footer />
