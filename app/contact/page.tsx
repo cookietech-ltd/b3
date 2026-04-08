@@ -121,8 +121,11 @@ export default function ContactPage() {
 
                         <div>
                             <h3 className="text-xl font-heading font-medium mb-4">Direct Contact</h3>
-                            <a href="mailto:connect@b3solutions.com" className="font-body text-black text-lg hover:underline decoration-black decoration-2 underline-offset-4">
+                            <a href="mailto:connect@b3solutions.com" className="font-body text-black text-lg hover:underline decoration-black decoration-2 underline-offset-4 block mb-2">
                                 connect@b3solutions.com
+                            </a>
+                            <a href="tel:+18035929158" className="font-body text-black text-lg hover:underline decoration-black decoration-2 underline-offset-4 block">
+                                +1-803-592-9158
                             </a>
                         </div>
 
