@@ -27,7 +27,7 @@ export default function ImplementationCapability() {
                         </li>
                         <li className="flex items-center gap-4">
                             <span className="w-2 h-2 bg-black rounded-full"></span>
-                            Workflow automation and process digitization
+                            AI workflow automation and process digitization
                         </li>
                     </ul>
 

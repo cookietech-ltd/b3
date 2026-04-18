@@ -36,7 +36,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
                 src={images[currentIndex].src}
                 alt={images[currentIndex].alt}
                 fill
-                className="object-cover transition-opacity duration-500"
+                className="object-contain transition-opacity duration-500"
             />
 
             {(images[currentIndex].title || images[currentIndex].subtitle) && (

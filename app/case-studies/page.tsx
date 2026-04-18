@@ -25,7 +25,7 @@ export default function CaseStudiesPage() {
                 <div className="container-custom">
                     <Link href="/case-studies/fitness-room-concierge" className="group block border border-black hover:bg-black hover:text-white transition-colors duration-300 w-full flex flex-col md:flex-row overflow-hidden">
                         <div className="w-full md:w-2/5 relative h-[300px] md:h-auto border-b md:border-b-0 md:border-r border-black group-hover:border-gray-800 transition-colors">
-                            <Image src="/images/case-studies/frc-hero.png" alt="Fitness Room Concierge" fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                            <Image src="/images/case-studies/frc-hero.jpg" alt="Fitness Room Concierge" fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
                         </div>
                         <div className="p-8 md:p-12 w-full md:w-3/5 flex flex-col items-start justify-center">
                             <h2 className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4 group-hover:text-gray-400 transition-colors">Case Study</h2>

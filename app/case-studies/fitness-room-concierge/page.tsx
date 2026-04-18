@@ -7,19 +7,19 @@ import ImageCarousel, { CarouselImage } from '../../components/ImageCarousel';
 export default function FRCCaseStudy() {
     const carouselImages: CarouselImage[] = [
         {
-            src: "/images/case-studies/frc-mobile.png",
+            src: "/images/case-studies/frc-2.png",
             alt: "FRC Mobile App Scanner",
             title: "Mobile Technician App",
             subtitle: "QR based onboarding logic"
         },
         {
-            src: "/images/case-studies/frc-mobile-2.png",
+            src: "/images/case-studies/frc-1.png",
             alt: "FRC Digital Work Order",
             title: "Digital Work Orders",
             subtitle: "Checklists & Parts Logging via Mobile"
         },
         {
-            src: "/images/case-studies/frc-web-staff.png",
+            src: "/images/case-studies/frc-3.png",
             alt: "FRC Web Staff Dashboard",
             title: "Staff Review Workflow",
             subtitle: "Centralized Kanban approvals"
@@ -33,13 +33,13 @@ export default function FRCCaseStudy() {
             <section className="bg-black text-white pt-40 pb-20 sharp">
                 <div className="container-custom">
                     <h1 className="text-5xl md:text-7xl font-heading font-thin mb-8">
-                        Case Study: <span className="text-white font-normal">Fitness Room Concierge</span>
+                        Case Study: <a href="https://www.myfitnessroomconcierge.com/" target="_blank" rel="noopener noreferrer" className="text-white font-normal hover:underline decoration-white/50 underline-offset-8 transition-colors hover:text-white/90">Fitness Room Concierge</a>
                     </h1>
                     <p className="text-xl font-body text-gray-400 max-w-3xl leading-relaxed">
                         The infrastructure couldn't support the service model FRC was building. Manual workflows were creating friction for members, staff, and technicians and limiting revenue capture.
                     </p>
-                    <div className="mt-16 w-full relative h-[300px] md:h-[500px] grayscale overflow-hidden group">
-                        <Image src="/images/case-studies/frc-hero.png" alt="Fitness Room Concierge" fill className="object-cover transition-transform duration-700 group-hover:scale-105" priority />
+                    <div className="mt-16 w-full relative h-[300px] md:h-[500px] grayscale group-hover:grayscale-0 transition-all duration-700 overflow-hidden group">
+                        <Image src="/images/case-studies/frc-hero.jpg" alt="Fitness Room Concierge" fill className="object-cover transition-transform duration-700 group-hover:scale-105" priority />
                     </div>
                 </div>
             </section>
@@ -98,8 +98,8 @@ export default function FRCCaseStudy() {
                             <p className="font-body text-gray-800 text-lg mb-6 leading-relaxed">
                                 Rather than layering software onto broken processes, we redesigned the service lifecycle from first principles. The goal wasn't digitization. It was structured operational clarity. Once the system was designed, we built the custom platform to run it.
                             </p>
-                            <div className="w-full relative h-[300px] md:h-[450px] mb-8 bg-black border border-gray-200">
-                                <Image src="/images/case-studies/frc-dashboard.png" alt="FRC Dashboard" fill className="object-cover opacity-90" />
+                            <div className="w-full relative h-[300px] md:h-[450px] mb-8 bg-transparent">
+                                <Image src="/images/case-studies/frc-dashboard.png" alt="FRC Dashboard" fill className="object-contain" />
                             </div>
                             <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">Strategic Design Work:</h3>
                             <ul className="space-y-4 font-body text-gray-600">

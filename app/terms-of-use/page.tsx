@@ -124,6 +124,7 @@ export default function TermsOfUsePage() {
                         <p className="bg-gray-100 p-6 rounded-sm border-l-4 border-black">
                             <strong className="text-black">B³ Solutions</strong><br />
                             Email: <span className="text-[#ff0000] font-bold">[INSERT CONTACT EMAIL]</span><br />
+                            Phone: <span className="text-[#ff0000] font-bold">+1-843-920-2902</span><br />
                             Website: <span className="text-[#ff0000] font-bold">[INSERT WEBSITE URL]</span>
                         </p>
                     </div>

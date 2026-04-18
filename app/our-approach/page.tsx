@@ -17,7 +17,7 @@ export default function OurApproachPage() {
         {
             number: "03",
             title: "Deploy & Integrate",
-            desc: "Build and deploy the infrastructure. Custom applications, CRM configuration, workflow automation, operational websites. Implement and integrate the system into operations."
+            desc: "Build and deploy the infrastructure. Custom applications, CRM configuration, AI workflow automation, operational websites. Implement and integrate the system into operations."
         },
         {
             number: "04",
@@ -33,7 +33,7 @@ export default function OurApproachPage() {
         },
         {
             title: "Technology Implementation",
-            items: ["Custom applications", "CRM configuration", "Dashboard setup", "Workflow automation", "Metric trackers", "Operational websites"]
+            items: ["Custom applications", "CRM configuration", "Dashboard setup", "AI software development", "AI Agent development", "AI workflow automation", "Metric trackers", "Operational websites"]
         },
         {
             title: "Training & Enablement",

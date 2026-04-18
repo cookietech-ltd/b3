@@ -12,6 +12,7 @@ export default function Footer() {
 
                 <div className="flex flex-col md:items-end gap-4 text-sm text-gray-500">
                     <div className="flex gap-8">
+                        <a href="tel:+18439202902" className="hover:text-white transition-colors">+1-843-920-2902</a>
                         <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
                         <Link href="/terms-of-use" className="hover:text-white transition-colors">Terms of Service</Link>
                     </div>
