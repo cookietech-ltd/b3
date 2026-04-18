@@ -124,8 +124,8 @@ export default function ContactPage() {
                             <a href="mailto:connect@b3solutions.com" className="font-body text-black text-lg hover:underline decoration-black decoration-2 underline-offset-4 block mb-2">
                                 connect@b3solutions.com
                             </a>
-                            <a href="tel:+18035929158" className="font-body text-black text-lg hover:underline decoration-black decoration-2 underline-offset-4 block">
-                                +1-803-592-9158
+                            <a href="tel:+18439202902" className="font-body text-black text-lg hover:underline decoration-black decoration-2 underline-offset-4 block">
+                                +1-843-920-2902
                             </a>
                         </div>
 

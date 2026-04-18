@@ -7,7 +7,7 @@ export default function Deliverables() {
         },
         {
             title: "Technology Implementation",
-            items: ["Custom applications", "CRM configuration", "Dashboard setup", "Workflow automation", "Metric trackers", "Operational websites"]
+            items: ["Custom applications", "CRM configuration", "Dashboard setup", "AI software development", "AI Agent development", "AI workflow automation", "Metric trackers", "Operational websites"]
         },
         {
             title: "Training & Enablement",
