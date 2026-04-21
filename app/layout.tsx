@@ -10,6 +10,14 @@ const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' })
 const siteUrl = getSiteUrl()
 const defaultTitle = `${siteConfig.name} | ${siteConfig.tagline}`
 
+/** Served from /public/og.png (homepage screenshot). Ideal size for most networks: 1200×630. */
+const socialImage = {
+  url: '/og.png',
+  width: 1024,
+  height: 563,
+  alt: `${siteConfig.name} — ${siteConfig.tagline}`,
+} as const
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -26,11 +34,13 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: defaultTitle,
     description: siteConfig.description,
+    images: [socialImage],
   },
   twitter: {
     card: 'summary_large_image',
     title: defaultTitle,
     description: siteConfig.description,
+    images: [socialImage.url],
   },
   robots: {
     index: true,
