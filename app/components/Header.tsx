@@ -42,9 +42,6 @@ export default function Header() {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center gap-10 font-body text-sm font-medium uppercase tracking-widest">
-                        <a href="tel:+18439202902" className="hover-underline-animation text-white/90 hover:text-white">
-                            +1-843-920-2902
-                        </a>
                         {navLinks.map((link) => (
                             <Link key={link.href} href={link.href} className="hover-underline-animation text-white/90 hover:text-white">
                                 {link.label}
@@ -65,9 +62,6 @@ export default function Header() {
             {/* Mobile Menu Overlay - Moved outside header to avoid clipping/backdrop filter issues */}
             <div className={`fixed inset-0 bg-black z-40 flex flex-col items-center justify-center transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
                 <nav className="flex flex-col items-center gap-8 font-heading text-2xl font-light uppercase tracking-widest text-center">
-                    <a href="tel:+18439202902" className="text-white/80 hover:text-white transition-colors transform hover:scale-105 duration-200">
-                        +1-843-920-2902
-                    </a>
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}
